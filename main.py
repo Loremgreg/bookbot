@@ -3,11 +3,17 @@ def get_book_text(book_path):                           # Fonction qui prend un 
        # file_contents = f.read()
         return f.read()                                 # la fonction Retourne le contenu du fichier sous forme de chaîne
 
+
+
+def count_words(book_content):                          # Fonction qui compte les mots dans le texte donné
+    words = book_content.split()                        # Divise le texte en une liste de mots (sépare par les espaces)
+    num_words = len(words)                              # Calcule le nombre de mots en obtenant la longueur de la liste
+    return num_words                                    # Retourne le nombre total de mots
+
 def main():                                             # Fonction principale qui appelle get_book_text avec un chemin relatif vers le document a lire
-    contents = get_book_text("books/frankenstein.txt")  
-    print(contents) 
+    contents = get_book_text("books/frankenstein.txt")  # Lit le contenu du livre Frankenstein et le stocke dans 'contents'
+    num_words = count_words(contents)                   # Compte les mots dans le contenu du livre
+    print(f'{num_words} words found in the document')  # Affiche le nombre de mots trouvés dans le document
 
-main()
-
-
+main()                                                  # Appelle la fonction principale pour exécuter le programme
 
