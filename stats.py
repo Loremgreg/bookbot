@@ -13,4 +13,15 @@ def count_characters(character):                        # Fonction qui compte ch
             counts[char] = 1                            # Sinon, initialise à 1
     return counts                                       # Retourne le dictionnaire de fréquences
 
+#from main import main
+def sort_characters_by_count(char_counts):                         # Fonction qui trie les caractères par nombre d'occurrences
+    conversion_to_dic_list = [{"char": key, "num": value} for key, value in char_counts.items()] # Transforme en liste de dictionnaires
+    conversion_to_dic_list.sort(key=lambda item: item["num"], reverse=True) # Trie du plus fréquent au moins fréquent -> “Utilise item["num"] comme critère de tri pour chaque dictionnaire de la liste.”
+    return conversion_to_dic_list                       # Retourne la liste triée
+
+                        
+
+
+
+
 
