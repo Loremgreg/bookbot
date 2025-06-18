@@ -36,7 +36,7 @@ def get_book_text(book_path):
 	•	sort_characters_by_count(): Sorts results by frequency
 
 🔹 Command-Line Argument Handling
-```
+```python
 import sys
 
 if len(sys.argv) != 2:
