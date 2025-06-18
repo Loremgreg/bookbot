@@ -29,19 +29,20 @@ A command-line text analysis tool that can read any book file and provide detail
 def get_book_text(book_path):
     with open(book_path, 'r', encoding="utf-8") as f:
         return f.read()
-
+```
 🔹 Text Processing Functions
 	•	count_words(): Splits text and counts words
 	•	count_characters(): Analyzes character frequency
 	•	sort_characters_by_count(): Sorts results by frequency
 
 🔹 Command-Line Argument Handling
+```python
 import sys
 
 if len(sys.argv) != 2:
     print("Usage: python3 main.py <path_to_book>")
     sys.exit(1)
-
+```
 🔹 Data Structures
 	•	Lists for storing word arrays
 	•	Dictionaries for character counting
@@ -70,6 +71,7 @@ if len(sys.argv) != 2:
 ⸻
 
 🖥️ Example Output
+
 ============ BOOKBOT ============
 Analyzing book found at books/frankenstein.txt
 ----------- Word Count ----------
