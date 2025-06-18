@@ -71,7 +71,7 @@ if len(sys.argv) != 2:
 ⸻
 
 🖥️ Example Output
-
+```
 ============ BOOKBOT ============
 Analyzing book found at books/frankenstein.txt
 ----------- Word Count ----------
@@ -82,7 +82,7 @@ t: 29493
 a: 26743
 ... more character counts ...
 ============= END ===============
-
+```
 🧩 Programming Concepts Mastered
 	•	Modular design: Separate functions for different tasks
 	•	Error handling: Graceful failure with helpful messages
