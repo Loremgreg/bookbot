@@ -2,7 +2,7 @@
 
 BookBot is my first [Boot.dev](https://www.boot.dev) project!
 
-Your Bookbot Project - Complete Overview
+Bookbot Project - Complete Overview
 What I Built
 A command-line text analysis tool that can read any book file and provide detailed statistics about it.
 
